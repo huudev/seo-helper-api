@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime, timezone
 from .routers.nlp import router as nlp_router
+from .routers.embed import router as embed_router
 
 # 🌐 app FastAPI
 app = FastAPI(
@@ -20,6 +21,7 @@ app.add_middleware(
 )
 
 app.include_router(nlp_router)
+app.include_router(embed_router)
 
 class HelloResponse(BaseModel):
     message: str
