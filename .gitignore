@@ -1,0 +1,58 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test & coverage
+.coverage
+.coverage.*
+.cache/
+htmlcov/
+.pytest_cache/
+toxic/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime*
+*.tmproj
+*.ropeproject/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+*.env
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# AWS / Serverless (nếu dùng)
+.serverless/
+
+# FastAPI/Jinja static builds
+static/
+templates/__pycache__/
+
+# MacOS
+.AppleDouble
+.LSOverride
