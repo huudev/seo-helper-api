@@ -15,5 +15,4 @@ class HelloResponse(BaseModel):
 @api.get("/hello", response_model=HelloResponse)
 def hello():
     now = datetime.now(timezone.utc).isoformat()
-    print("📢[main.py:34]: ", now)
     return {"message": "Hello!", "time": now}
