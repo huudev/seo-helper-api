@@ -20,6 +20,11 @@ cd "$CLONE_DIR"
 if [ -f "$INSTALL_OK_FILE" ]; then
   echo "✅ Đã cài đặt trước đó, bỏ qua bước cài đặt."
 else
+  # --- Cài Cloudflare Tunnel ---
+  echo "🌐 Đang cài cloudflared..."
+  sudo curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /usr/local/bin/cloudflared
+  sudo chmod +x /usr/local/bin/cloudflared
+  
   # --- Cài Python 3.10 ---
   echo "🐍 Đang cài đặt Python 3.10..."
   sudo apt update
