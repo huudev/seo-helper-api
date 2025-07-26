@@ -55,4 +55,4 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers $(nproc) &
 
 # --- Publish với Cloudflare Tunnel ---
 echo "🌍 Đang publish port 8000 qua Cloudflare Tunnel..."
-cloudflared tunnel --url http://localhost:8000 --no-autoupdate --loglevel warn
+cloudflared tunnel --url http://localhost:8000
