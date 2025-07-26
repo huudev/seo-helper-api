@@ -2,9 +2,3 @@ fastapi==0.95.1
 uvicorn[standard]==0.22.0
 py_vncorenlp==0.1.4
 sentence-transformers==5.0.0
-
-# Windows (CPU, Python 3.10, x64)
-torch @ https://download.pytorch.org/whl/cpu/torch-2.7.1%2Bcpu-cp310-cp310-win_amd64.whl; sys_platform == "win32"
-
-# Linux (CPU, Python 3.10, x64)
-torch @ https://download.pytorch.org/whl/cpu/torch-2.7.1%2Bcpu-cp310-cp310-linux_x86_64.whl; sys_platform != "win32"
