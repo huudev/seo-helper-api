@@ -3,10 +3,12 @@ from pydantic import BaseModel
 from datetime import datetime, timezone
 from .nlp import router as nlp_router
 from .embed import router as embed_router
+from .chat_bot import router as chat_bot_router
 
 api = APIRouter(prefix="/api/plugins", tags=["/api/plugins"])
 api.include_router(nlp_router)
 api.include_router(embed_router)
+api.include_router(chat_bot_router)
 
 class HelloResponse(BaseModel):
     message: str
